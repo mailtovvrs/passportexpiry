@@ -1,0 +1,5 @@
+streamlit
+pillow
+pymupdf
+passporteye
+opencv-python
