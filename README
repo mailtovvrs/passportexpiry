@@ -1,0 +1,2 @@
+packages.txt exists to install OS/Bash level packages
+requirements.txt exists to install python level packages
