@@ -164,7 +164,8 @@ def ui():
         with col2:
             if st.button("Passport Image") and file_path:
                 image = passport_image(file_path)
-                st.write(image)
+                #st.write(image)
+                st.write("🔜")
 
         with col3:
             if st.button("Days Left"):
