@@ -107,15 +107,16 @@ def passport_details(file_path):
     return surname,passport_number,date_of_birth,expiration_date
 
 def passport_image(file_path):
+    st.write("🔜")
     st.write("In passport image")
     st.write("uploaded_passport_path:",file_path)
     # Read the image
-    image = mpimg.imread(file_path)
+    #image = mpimg.imread(file_path)
     # Convert to grayscale if required
-    grayscale_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    #grayscale_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     # Display the image
     # Display grayscale image
-    st.image(grayscale_image, caption="Uploaded Passport (Grayscale)", use_container_width=True, channels="GRAY")
+    #st.image(grayscale_image, caption="Uploaded Passport (Grayscale)", use_container_width=True, channels="GRAY")
     #return grayscale_image  # Returning grayscale image if required by OCR
     
 
@@ -165,7 +166,7 @@ def ui():
             if st.button("Passport Image") and file_path:
                 image = passport_image(file_path)
                 #st.write(image)
-                st.write("🔜")
+                
 
         with col3:
             if st.button("Days Left"):
