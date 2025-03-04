@@ -115,7 +115,7 @@ def passport_image(file_path):
     # Display the image
     # Display grayscale image
     st.image(grayscale_image, caption="Uploaded Passport (Grayscale)", use_container_width=True, channels="GRAY")
-    return grayscale_image  # Returning grayscale image if required by OCR
+    #return grayscale_image  # Returning grayscale image if required by OCR
     
 
     
