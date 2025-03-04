@@ -15,7 +15,7 @@ import string
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
-import cv2
+#import cv2
 
 def get_temp_dir():
     """Returns a temporary directory that works across platforms."""
